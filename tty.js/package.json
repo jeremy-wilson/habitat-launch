@@ -2,7 +2,7 @@
   "_args": [
     [
       "tty.js@~0.2.15",
-      "/Users/adam/Documents/habitat-launch"
+      "/Users/jwilson/Sites/habitat-launch"
     ]
   ],
   "_from": "tty.js@>=0.2.15 <0.3.0",
@@ -47,7 +47,7 @@
   "_shasum": "88233eaa73d1853a8bc94e8af787b7cdc7548fa7",
   "_shrinkwrap": null,
   "_spec": "tty.js@~0.2.15",
-  "_where": "/Users/adam/Documents/habitat-launch",
+  "_where": "/Users/jwilson/Sites/habitat-launch",
   "author": {
     "name": "Christopher Jeffrey"
   },
