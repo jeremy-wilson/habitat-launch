@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -15,11 +15,11 @@
 
     <!-- Printing and PDF exports -->
     <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
     </script>
     <script type="text/javascript" src="//fast.fonts.net/jsapi/2eb69eac-ab69-4627-978f-31e0a9f079cb.js"></script>
     <script src="node_modules/tty.js/socket.io/socket.io.js"></script>
@@ -27,92 +27,146 @@
     <script src="options.js"></script>
     <script src="tty.js"></script>
     <script src="user.js"></script>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-          <section data-background="images/si-home-background.svg">
-              <aside class="notes">
-                  <ul>
-                      <li>In this presentation, you will learn how to provision your local stack environment, as well as how to work with all the related technologies in the platform.</li>
-                      <li>The goals of this presentation are to provide a walk through of all the technologies utilized in the SaaS Industries platform which will enable you to create business features and not worry so much about the plumbing or infrastructure concerns.</li>
-                      <li>By the end of this presentation, you shoudl have a local development environment configured and should be able to push new business logic features to test, stage and production as well as make any infrastructure changes needed (e.g., provisioning a new database, etc) through IaC.</li>
-                  </ul>
-              </aside>
-          </section>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-background="images/si-home-background.svg">
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
 
-          <section data-transition="none" data-background="images/si-now.jpg">
-              <div class="solid">
-                  <h2 class="hab-green">Week 2-4 <span class="hab-blue">Accomplishments</span></h2>
-                  <div class="split-screen">
-                      <div class="left">
-                          <p>Sample Twitter App</p>
-                          <hr/>
-                          <p>Cloud Provisioning (Terraform)</p>
-                          <hr/>
-                          <p>Integrated Provisioning of Fabric8</p>
-                          <hr/>
-                      </div>
-                      <div class="right">
-                          <p class="hab-green">Local Development</p>
-                          <hr/>
-                          <p class="hab-green">CI/CD Environment</p>
-                          <hr/>
-                          <p class="hab-light-grey">Test, Stage, Production</p>
-                      </div>
-                  </div>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-lego-blocks.jpg">
-              <div class="solid">
-                  <h2 class="hab-green">What's <span class="hab-blue">Next</span></h2>
-                  <div class="split-screen">
-                      <div class="left">
-                          <p>Integrating Cloud Dependencies</p>
-                          <hr/>
-                          <p>Chassis</p>
-                          <hr/>
-                          <p>Lifecycle Demonstration</p>
-                          <hr/>
-                      </div>
-                      <div class="right">
-                          <p class="hab-green">Local Development</p>
-                          <hr/>
-                          <p class="hab-green">CI/CD Environment</p>
-                          <hr/>
-                          <p class="hab-green">Test, Stage, Production</p>
-                      </div>
-                  </div>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="fade-out" data-background="images/si-default-background.svg">
-            <div class="see-through">
-              <h1>Technology Vision</h1>
-              <h3>Provide a PaaS to support the culture, operations, agility, adaptability, and scalability required for rapidly developing SaaS companies in any stage of growth</h3>
+        <!-- LEARNINGS -->
+        <section data-transition="none" data-background="images/si-now.jpg">
+            <div class="solid">
+                <h2 class="hab-green">What we <span class="hab-blue">Learned</span></h2>
+                <p>Production Cliff Beware!</p>
+                <hr/>
+                <p>Cloud Dev vs. Local Dev</p>
+                <hr/>
+                <p>Everything &quot;as-a-service&quot;</p>
+                <hr/>
+                <p>How to Custom Build Fabric8</p>
+                <hr/>
+                <p>How Logging &amp; Visibility Works</p>
             </div>
             <aside class="notes">
-              <ul>
-                  <li>We want to support a culture of empowering teams and individualls to enable continuous improvement and innovation through DevOps &amp; Lean/Agile culture.</li>
-                  <li>Our day to day operations automate everything that can be automated. This includes infrastructure, software, business logic, quality, etc.</li>
-                  <li>We use technologies and modern architectures which reinforce the culture and behaviors of the people.</li>
-              </ul>
+                <ul>
+                    <li></li>
+                </ul>
             </aside>
-          </section>
+        </section>
 
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="see-through">
+        <!-- ACCOMPLISHMENTS -->
+        <section data-transition="none" data-background="images/si-now.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Week 3-7 <span class="hab-blue">Accomplishments</span></h2>
+                <div class="split-screen">
+                    <div class="left">
+                        <p>Learning Kubernetes</p>
+                        <hr/>
+                        <p>Demo Architectural App</p>
+                        <hr/>
+                        <p>Terraform Automation</p>
+                        <hr/>
+                        <p>Cloud Development Environments</p>
+                        <hr/>
+                        <p>Cloud Documentation</p>
+                        <hr/>
+                    </div>
+                    <div class="right">
+                        <p class="hab-green">Local Development</p>
+                        <hr/>
+                        <p class="hab-green">CI/CD Environment</p>
+                        <hr/>
+                        <p class="hab-green">Test, Stage, Production</p>
+                    </div>
+                </div>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- WATER COOLER TALKS -->
+        <section data-transition="none" data-background="images/si-now.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Water Cooler <span class="hab-blue">Talks</span></h2>
+                <h3 class="hab-orange">Monetizing API &quot;as-a-service&quot;</h3>
+                <hr/>
+                <h3 class="hab-orange">Monitizing Platform &quot;as-a-service&quot;</h3>
+                <hr/>
+                <h3 class="hab-orange">Phase 2/3 Dev Capacity</h3>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- WHAT'S NEXT -->
+        <section data-transition="none" data-background="images/si-lego-blocks.jpg">
+            <div class="solid">
+                <h2 class="hab-green">What's <span class="hab-blue">Next</span></h2>
+                <p>SDLC Standards</p>
+                <hr/>
+                <p>API Gateway</p>
+                <hr/>
+                <p>Event Sourcing Demo</p>
+                <hr/>
+                <p>CQRS Demo</p>
+                <hr/>
+                <p>Custom Fabric8 Builds</p>
+                <hr/>
+                <p>Unifying DevOps Namespaces</p>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- WHAT'S NEEDED FROM TEAM -->
+        <section data-transition="none" data-background="images/si-now.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Needs from <span class="hab-blue">Team</span></h2>
+                <h3 class="hab-dark-grey">Phase 2 UI Component Design</h3>
+                <hr/>
+                <h3 class="hab-dark-grey">Phase 3 Stock Functionality B2B</h3>
+                <hr/>
+                <h3 class="hab-dark-grey">Phase 3 Stock Functionality B2C</h3>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- TECHNOLOGY VISION -->
+        <section data-transition="fade-out" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h1>Technology Vision</h1>
+                <h3>Provide a PaaS to support the culture, operations, agility, adaptability, and scalability required
+                    for rapidly developing SaaS companies in any stage of growth</h3>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- TECHNOLOGY VISION #2 -->
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="see-through">
                 <h2 class="hab-orange">Hundreds of SaaS Companies</h2>
                 <hr/>
                 <h2 class="hab-light-grey">Every Industry &amp; Market Segmentation</h2>
@@ -121,369 +175,395 @@
                 <hr/>
                 <h2 class="hab-light-grey">Existing Platform Migrations</h2>
                 <aside class="notes">
-                  <ul>
-                      <li>The platform is built with flexibility and scalability in mind for Y-Axis scaling both the technology as well as product development organizations. It is expected that the SaaS Industries platform will create hundreds of SaaS Companies in Phoenix over the next few years.</li>
-                  </ul>
+                    <ul>
+                        <li></li>
+                    </ul>
                 </aside>
-              </div>
-          </section>
+            </div>
+        </section>
 
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="see-through">
-                  <h2 class="hab-light-grey">Hundreds of SaaS Companies</h2>
-                  <hr/>
-                  <h2 class="hab-orange">Every Industry &amp; Market Segmentation</h2>
-                  <hr/>
-                  <h2 class="hab-light-grey">Perfect for Startups</h2>
-                  <hr/>
-                  <h2 class="hab-light-grey">Existing Platform Migrations</h2>
-                  <aside class="notes">
-                      <ul>
-                          <li>Because the SaaS Industries PaaS is an open system, it's business logic and presentation layer can be molded to fit any type of SaaS Company.</li>
-                          <li>This would include any industry like retail, POS, healthcare and even different market segments like B2B and B2C.</li>
-                          <li>Becuase of the platforms focus on Y-Axis scale, the architecture will scale as the business scales and keep agility and innovation high in the organization.</li>
-                      </ul>
-                  </aside>
-              </div>
-          </section>
-
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="see-through">
-                  <h2 class="hab-light-grey">Hundreds of SaaS Companies</h2>
-                  <hr/>
-                  <h2 class="hab-light-grey">Every Industry &amp; Market Segmentation</h2>
-                  <hr/>
-                  <h2 class="hab-orange">Perfect for Startups</h2>
-                  <hr/>
-                  <h2 class="hab-light-grey">Existing Platform Migrations</h2>
-                  <aside class="notes">
-                      <ul>
-                          <li>The platform is a perfect choice for startups becuase you can easily shave multiple quarters of development time from your MVP because the architecture is pre-built.</li>
-                          <li>The platform comes complete with a DevOps pipeline, IaC to manage operations and a business logic continuous delivery system to get your features into production fast without silos or process impediments.</li>
-                          <li>The platform comes complete with architecture, full automation, a component guide which allows you to quickly construct UI components, and SaaS business logic features which gets the business runnning quickly. All you have to do is create the custom business logic for yoru particular startup and launch.</li>
-                          <li>The distributed architecture also accounts for thins like performance logging, metrics, analytics and resiliency.</li>
-                          <li>The platform's SaaS business features will be primarily written in Java Spring Boot, however, the PaaS can support any major UNIX based language (e.g., NodeJS, PHP, Go, etc)</li>
-                          <li>If you chose to not develop with the pre-authored business logic features written in Java Spring Boot, you will loose all the benefits of the built in resilliency into the various chassis we have built, as well as pre-existing features that come with the platform. You would meerly need to create these features for yourself.</li>
-                          <li>That said, you can easily incirporate other applications written in other languages to work along with the Java Spring Boot system, as they would easily plug and play.</li>
-                          <li>Because the platform is a distributed system that is implemented using the principles of micro-services, it prevents software erosion because if you get it wrong, it's very easy to change it without major rewrites of entire systems.</li>
-                      </ul>
-                  </aside>
-              </div>
-          </section>
-
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="see-through">
-                  <h2 class="hab-light-grey">Hundreds of SaaS Companies</h2>
-                  <hr/>
-                  <h2 class="hab-light-grey">Every Industry &amp; Market Segmentation</h2>
-                  <hr/>
-                  <h2 class="hab-light-grey">Perfect for Startups</h2>
-                  <hr/>
-                  <h2 class="hab-orange">Existing Platform Migrations</h2>
-                  <aside class="notes">
-                      <ul>
-                          <li>For existing legacy platforms who are considering moving to a more scalable and agile architecture, using technologies that reinforce the behaviors of people who are empowered, innovate and can be agile, the SaaS Industries platform can be used in conjunction with a lagacy platform.</li>
-                          <li>Basically, you would behind developing new features on the SaaS Industries platform, and then use integration patterns to get the new platform and the old platform to work with one another.</li>
-                          <li>Such an effort does take experience with taking on such a task, but through a data and configuration integration strategy as well as incorporating how the roadmap fits into migrating into a new platform, you can start running your new features with all the benifits of a great platform while iterating the legacy features off the old platform.</li>
-                      </ul>
-                  </aside>
-              </div>
-          </section>
-
-          <section data-transition="fade-out" data-background="images/si-default-background.svg">
+        <!-- TECHNOLOGY VISION #2 -->
+        <section data-transition="none" data-background="images/si-default-background.svg">
             <div class="see-through">
-              <h1 class="hab-green">People</h1>
-              <hr/>
-              <h1 class="hab-blue">Product</h1>
-              <hr/>
-              <h1 class="hab-red">Companies</h1>
+                <h2 class="hab-light-grey">Hundreds of SaaS Companies</h2>
+                <hr/>
+                <h2 class="hab-orange">Every Industry &amp; Market Segmentation</h2>
+                <hr/>
+                <h2 class="hab-light-grey">Perfect for Startups</h2>
+                <hr/>
+                <h2 class="hab-light-grey">Existing Platform Migrations</h2>
+                <aside class="notes">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY VISION #2 -->
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h2 class="hab-light-grey">Hundreds of SaaS Companies</h2>
+                <hr/>
+                <h2 class="hab-light-grey">Every Industry &amp; Market Segmentation</h2>
+                <hr/>
+                <h2 class="hab-orange">Perfect for Startups</h2>
+                <hr/>
+                <h2 class="hab-light-grey">Existing Platform Migrations</h2>
+                <aside class="notes">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY VISION #2 -->
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h2 class="hab-light-grey">Hundreds of SaaS Companies</h2>
+                <hr/>
+                <h2 class="hab-light-grey">Every Industry &amp; Market Segmentation</h2>
+                <hr/>
+                <h2 class="hab-light-grey">Perfect for Startups</h2>
+                <hr/>
+                <h2 class="hab-orange">Existing Platform Migrations</h2>
+                <aside class="notes">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!--
+        <section data-transition="fade-out" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h1 class="hab-green">People</h1>
+                <hr/>
+                <h1 class="hab-blue">Product</h1>
+                <hr/>
+                <h1 class="hab-red">Companies</h1>
             </div>
             <aside class="notes">
-              <ul>
-                  <li>Everything we do starts with people. We mold the tech and operations around the way high functioning teams work in the most successful SaaS companies.</li>
-                  <li>If the people are high functioning, are empowered and can innovate quickly and be incredibly agile, they will create a robust product which can respond quickly to the customers needs, making purchase decisions easier.</li>
-                  <li>And with a people who can build a great product, the business can grow rapidly and sucessful companies can be built.</li>
-              </ul>
+                <ul>
+                    <li>Everything we do starts with people. We mold the tech and operations around the way high
+                        functioning teams work in the most successful SaaS companies.
+                    </li>
+                    <li>If the people are high functioning, are empowered and can innovate quickly and be incredibly
+                        agile, they will create a robust product which can respond quickly to the customers needs,
+                        making purchase decisions easier.
+                    </li>
+                    <li>And with a people who can build a great product, the business can grow rapidly and sucessful
+                        companies can be built.
+                    </li>
+                </ul>
             </aside>
-          </section>
+        </section>
+        -->
 
-          <section data-transition="fade-out" data-background="images/si-default-background.svg">
+        <!--
+        <section data-transition="fade-out" data-background="images/si-default-background.svg">
             <div class="see-through">
-                <img src="images/si-people-technology.svg" class="plain" alt="Culture and Technology People" width="50%"/>
+                <img src="images/si-people-technology.svg" class="plain" alt="Culture and Technology People"
+                     width="50%"/>
             </div>
             <aside class="notes">
-              <ul>
-                  <li>As we mentioned earlier, everything in the platform orientates around people.</li>
-                  <li>The development organization embraces the principles behind Lean/Agile, DevOps and Micro-Services in order to create a culture of continuous improvement and innovation that can meet any stage of a SaaS company and it's customers demamds.</li>
-                  <li>People are empowered &amp; Happy &amp; Productive because they own the entire solution and can act quickly to meet a need.</li>
-                  <li>The entire platform and it's operations are based on principles found by the way successful SaaS development shops work (e.g., Netflix, Facebook, etc) and we let technology reinforce that behavior.</li>
-              </ul>
+                <ul>
+                    <li>As we mentioned earlier, everything in the platform orientates around people.</li>
+                    <li>The development organization embraces the principles behind Lean/Agile, DevOps and
+                        Micro-Services in order to create a culture of continuous improvement and innovation that can
+                        meet any stage of a SaaS company and it's customers demamds.
+                    </li>
+                    <li>People are empowered &amp; Happy &amp; Productive because they own the entire solution and can
+                        act quickly to meet a need.
+                    </li>
+                    <li>The entire platform and it's operations are based on principles found by the way successful SaaS
+                        development shops work (e.g., Netflix, Facebook, etc) and we let technology reinforce that
+                        behavior.
+                    </li>
+                </ul>
             </aside>
-          </section>
+        </section>
+        -->
 
-          <section data-transition="fade-out" data-background="images/si-default-background.svg">
+        <section data-transition="fade-out" data-background="images/si-default-background.svg">
             <div class="solid">
-                <h1>JV Provision</h1>
+                <h1>Cloud Provision</h1>
                 <hr/>
-                <h1>Build Product</h1>
+                <h1>Local Dependencies</h1>
                 <hr/>
-                <h1 class="hab-blue">Complete CI &amp; CD</h1>
+                <h1 class="hab-blue">Build Product</h1>
                 <hr/>
-                <h1 class="hab-orange">IaC Manage</h1>
+                <h1 class="hab-orange">Instant CI/CD</h1>
             </div>
             <aside class="notes">
-              <ul>
-                <li>JV: Instant setup for a new JV. Through automation, a JV can have the PaaS provisioned and ready to develop product with minumal configuration.</li>
-                <li>Product: Fast, efficient, software driven approach. No need to worry about infrastructure, setting up DevOps programs or automation. Each product feature extends existing automation.</li>
-                <li>Build, Deploy, Manage of Applications through out of the box continuous integration and continuous delivery</li>
-                <li>Manage infrastructure and IaaS PaaS solutions with IaC automation</li>
-                <li>Focus on building product features, accelerating roadmap development and boosting business agility</li>
-              </ul>
-            </aside>
-          </section>
 
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="solid">
+            </aside>
+        </section>
+
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="solid">
                 <h3>Big Web Application Lifecycle</h3>
                 <img src="images/si-best-app-lifecycle.png" class="plain" alt="Big Web Application Lifecycle"/>
-              </div>
-              <aside class="notes">
+            </div>
+            <aside class="notes">
                 <ul>
-                  <li>A complete platform</li>
-                  <li>Operations + Dev combined without silos for complete empowerment and agility</li>
-                  <li>Product release with zero downtime and rolling out features continuously, decoupling deployment from release</li>
-                  <li>Streamlined delivery to be continuous with quality in mind</li>
+                    <li>A complete platform</li>
+                    <li>Operations + Dev combined without silos for complete empowerment and agility</li>
+                    <li>Product release with zero downtime and rolling out features continuously, decoupling deployment
+                        from release
+                    </li>
+                    <li>Streamlined delivery to be continuous with quality in mind</li>
                 </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="solid">
-                  <h3>Big Web Application Lifecycle</h3>
-                  <img src="images/si-best-app-lifecycle-iac.png" class="plain" alt="Big Web Application Lifecycle"/>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li>A complete platform</li>
-                      <li>Operations + Dev combined without silos for complete empowerment and agility</li>
-                      <li>Product release with zero downtime and rolling out features continuously, decoupling deployment from release</li>
-                      <li>Streamlined delivery to be continuous with quality in mind</li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="solid">
-                  <h3>Big Web Application Lifecycle</h3>
-                  <img src="images/si-best-app-lifecycle-build.png" class="plain" alt="Big Web Application Lifecycle"/>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li>A complete platform</li>
-                      <li>Operations + Dev combined without silos for complete empowerment and agility</li>
-                      <li>Product release with zero downtime and rolling out features continuously, decoupling deployment from release</li>
-                      <li>Streamlined delivery to be continuous with quality in mind</li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="solid">
-                  <h3>Big Web Application Lifecycle</h3>
-                  <img src="images/si-best-app-lifecycle-delivery.png" class="plain" alt="Big Web Application Lifecycle"/>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li>A complete platform</li>
-                      <li>Operations + Dev combined without silos for complete empowerment and agility</li>
-                      <li>Product release with zero downtime and rolling out features continuously, decoupling deployment from release</li>
-                      <li>Streamlined delivery to be continuous with quality in mind</li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-default-background.svg">
-            <div class="see-through">
-              <h2>The Production Cliff</h2>
-              <img src="images/si-difficulty-curve.png" alt="Difficulty Curve"/>
-            </div>
-            <aside class="notes">
-              <ul>
-                <li>Starts easy, gets a little harder</li>
-                <li>Dip of False Mastery, non-linear</li>
-                <li>Non-Linear</li>
-                <li>More to deploy, more to configure</li>
-                <li>Application Automation keeps the curve flat</li>
-                <li>Lets show you how</li>
-              </ul>
             </aside>
-          </section>
+        </section>
 
-          <section data-transition="none" data-background="images/si-default-background.svg">
-              <div class="see-through">
-                  <h2>The Production Cliff</h2>
-                  <img src="images/si-difficulty-curve-avoid.png" alt="Difficulty Curve"/>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="fade" data-background="images/si-default-background.svg">
-            <div class="see-through">
-              <h1>JV Starts<br><span class="hab-blue">fully implemented</span></h1>
-            </div>
-            <aside class="notes">
-              <ul>
-                <li></li>
-              </ul>
-            </aside>
-          </section>
-
-          <section data-transition="fade" data-background="images/si-solutions-logos-bg-01.png">
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-lego-blocks.jpg">
-              <div class="solid">
-                  <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
-                  <div class="split-screen">
-                      <div class="left">
-                          <img src="images/si-iac-pipeline.png">
-                      </div>
-                      <div class="right">
-                          <p class="hab-green">Local Development</p>
-                          <hr/>
-                          <p class="hab-orange">CI/CD Environment</p>
-                          <hr/>
-                          <p class="hab-red">Test, Stage, Production</p>
-                      </div>
-                  </div>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-lego-blocks.jpg">
-              <div class="solid">
-                  <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
-                  <div class="split-screen">
-                      <div class="left">
-                          <img src="images/si-iac-pipeline-local.png">
-                      </div>
-                      <div class="right">
-                          <p class="hab-green">Local Development</p>
-                          <hr/>
-                          <p class="hab-light-grey">CI/CD Environment</p>
-                          <hr/>
-                          <p class="hab-light-grey">Test, Stage, Production</p>
-                      </div>
-                  </div>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-lego-blocks.jpg">
-              <div class="solid">
-                  <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
-                  <div class="split-screen">
-                      <div class="left">
-                          <img src="images/si-iac-pipeline-cicd.png">
-                      </div>
-                      <div class="right">
-                          <p class="hab-light-grey">Local Development</p>
-                          <hr/>
-                          <p class="hab-orange">CI/CD Environment</p>
-                          <hr/>
-                          <p class="hab-light-grey">Test, Stage, Production</p>
-                      </div>
-                  </div>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="none" data-background="images/si-lego-blocks.jpg">
-              <div class="solid">
-                  <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
-                  <div class="split-screen">
-                      <div class="left">
-                          <img src="images/si-iac-pipeline-tsp.png">
-                      </div>
-                      <div class="right">
-                          <p class="hab-light-grey">Local Development</p>
-                          <hr/>
-                          <p class="hab-light-grey">CI/CD Environment</p>
-                          <hr/>
-                          <p class="hab-red">Test, Stage, Production</p>
-                      </div>
-                  </div>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-transition="fade" data-background="images/si-default-background.svg">
-              <div class="see-through">
-                  <h1>Provisioned <span class="hab-blue">with one command</span>!</h1>
-              </div>
-              <aside class="notes">
-                  <ul>
-                      <li></li>
-                  </ul>
-              </aside>
-          </section>
-
-          <section data-background="images/si-container.jpg">
+        <section data-transition="none" data-background="images/si-default-background.svg">
             <div class="solid">
-              <h2 class="hab-green">Setup <span class="hab-blue">Cloud Environment</span></h2>
-              <div class="split-screen">
-                <div class="left">
-                  <iframe src="http://localhost:8080" class="stretch"></iframe>
-                </div>
-                <div class="right">
-                    <p class="hab-green">IaC Automation</p>
-                    <hr/>
-                    <p class="hab-orange">Zero day readiness</p>
-                    <hr/>
-                    <p class="hab-orange">Day One Features</p>
-                </div>
-              </div>
+                <h3>Big Web Application Lifecycle</h3>
+                <img src="images/si-best-app-lifecycle-iac.png" class="plain" alt="Big Web Application Lifecycle"/>
             </div>
             <aside class="notes">
-              <ul>
-                  <li>Select the terminal window with your mouse.</li>
-              </ul>
+                <ul>
+                    <li>A complete platform</li>
+                    <li>Operations + Dev combined without silos for complete empowerment and agility</li>
+                    <li>Product release with zero downtime and rolling out features continuously, decoupling deployment
+                        from release
+                    </li>
+                    <li>Streamlined delivery to be continuous with quality in mind</li>
+                </ul>
             </aside>
-          </section>
-      </div>
+        </section>
+
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="solid">
+                <h3>Big Web Application Lifecycle</h3>
+                <img src="images/si-best-app-lifecycle-build.png" class="plain" alt="Big Web Application Lifecycle"/>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li>A complete platform</li>
+                    <li>Operations + Dev combined without silos for complete empowerment and agility</li>
+                    <li>Product release with zero downtime and rolling out features continuously, decoupling deployment
+                        from release
+                    </li>
+                    <li>Streamlined delivery to be continuous with quality in mind</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="solid">
+                <h3>Big Web Application Lifecycle</h3>
+                <img src="images/si-best-app-lifecycle-delivery.png" class="plain" alt="Big Web Application Lifecycle"/>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li>A complete platform</li>
+                    <li>Operations + Dev combined without silos for complete empowerment and agility</li>
+                    <li>Product release with zero downtime and rolling out features continuously, decoupling deployment
+                        from release
+                    </li>
+                    <li>Streamlined delivery to be continuous with quality in mind</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h2>The Production Cliff</h2>
+                <img src="images/si-difficulty-curve.png" alt="Difficulty Curve"/>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li>Starts easy, gets a little harder</li>
+                    <li>Dip of False Mastery, non-linear</li>
+                    <li>Non-Linear</li>
+                    <li>More to deploy, more to configure</li>
+                    <li>Application Automation keeps the curve flat</li>
+                    <li>Lets show you how</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section data-transition="none" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h2>The Production Cliff</h2>
+                <img src="images/si-difficulty-curve-avoid.png" alt="Difficulty Curve"/>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!--
+        <section data-transition="fade" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h1>JV Starts<br><span class="hab-blue">fully implemented</span></h1>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+        -->
+
+        <!--
+        <section data-transition="fade" data-background="images/si-solutions-logos-bg-01.png">
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+        -->
+
+        <!--
+        <section data-transition="none" data-background="images/si-lego-blocks.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
+                <div class="split-screen">
+                    <div class="left">
+                        <img src="images/si-iac-pipeline.png">
+                    </div>
+                    <div class="right">
+                        <p class="hab-green">Local Development</p>
+                        <hr/>
+                        <p class="hab-orange">CI/CD Environment</p>
+                        <hr/>
+                        <p class="hab-red">Test, Stage, Production</p>
+                    </div>
+                </div>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+        -->
+
+        <!--
+        <section data-transition="none" data-background="images/si-lego-blocks.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
+                <div class="split-screen">
+                    <div class="left">
+                        <img src="images/si-iac-pipeline-local.png">
+                    </div>
+                    <div class="right">
+                        <p class="hab-green">Local Development</p>
+                        <hr/>
+                        <p class="hab-light-grey">CI/CD Environment</p>
+                        <hr/>
+                        <p class="hab-light-grey">Test, Stage, Production</p>
+                    </div>
+                </div>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+        -->
+
+        <!--
+        <section data-transition="none" data-background="images/si-lego-blocks.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
+                <div class="split-screen">
+                    <div class="left">
+                        <img src="images/si-iac-pipeline-cicd.png">
+                    </div>
+                    <div class="right">
+                        <p class="hab-light-grey">Local Development</p>
+                        <hr/>
+                        <p class="hab-orange">CI/CD Environment</p>
+                        <hr/>
+                        <p class="hab-light-grey">Test, Stage, Production</p>
+                    </div>
+                </div>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+        -->
+
+        <!--
+        <section data-transition="none" data-background="images/si-lego-blocks.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Build <span class="hab-blue">from lego blocks</span></h2>
+                <div class="split-screen">
+                    <div class="left">
+                        <img src="images/si-iac-pipeline-tsp.png">
+                    </div>
+                    <div class="right">
+                        <p class="hab-light-grey">Local Development</p>
+                        <hr/>
+                        <p class="hab-light-grey">CI/CD Environment</p>
+                        <hr/>
+                        <p class="hab-red">Test, Stage, Production</p>
+                    </div>
+                </div>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+        -->
+
+        <section data-transition="fade" data-background="images/si-default-background.svg">
+            <div class="see-through">
+                <h1>Setup is <span class="hab-blue">simple</span>!</h1>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li></li>
+                </ul>
+            </aside>
+        </section>
+
+        <section data-background="images/si-container.jpg">
+            <div class="solid">
+                <h2 class="hab-green">Setup <span class="hab-blue">Cloud Environment</span></h2>
+                <div class="split-screen">
+                    <div class="left">
+                        <iframe src="http://localhost:8080" class="stretch"></iframe>
+                    </div>
+                    <div class="right">
+                        <p class="hab-green">IaC Automation</p>
+                        <hr/>
+                        <p class="hab-orange">Zero day readiness</p>
+                        <hr/>
+                        <p class="hab-red">Day One Features</p>
+                    </div>
+                </div>
+            </div>
+            <aside class="notes">
+                <ul>
+                    <li>Select the terminal window with your mouse.</li>
+                </ul>
+            </aside>
+        </section>
     </div>
+</div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-    <script>
-      // More info https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
         width: 1024,
         history: true,
         controls: false,
@@ -491,21 +571,25 @@
         touch: true,
         slideNumber: true,
         keyboard: {
-          66: null,
-          72: null,
-          76: null,
-          78: null
+            66: null,
+            72: null,
+            76: null,
+            78: null
         },
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
-          { src: 'plugin/markdown/marked.js' },
-          { src: 'plugin/markdown/markdown.js' },
-          { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
         ]
-      });
+    });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
